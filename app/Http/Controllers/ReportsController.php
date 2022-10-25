@@ -15,7 +15,6 @@ class ReportsController extends Controller
     public function index()
     {
         // se validara git
-        $mistery = [];
         $users = DB::select("SELECT c.id_cliente,
 concat(IFNULL(c.nombre,''),' ',
 IFNULL(c.apellido,'')) AS nombre_cliente,
