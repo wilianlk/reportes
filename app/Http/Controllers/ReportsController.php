@@ -3,17 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ReportsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+//    /**
+//     * Display a listing of the resource.
+//     *
+//     * @return \Illuminate\Http\Response
+//     */
     public function index()
     {
         // se validara git
+        $mistery = [];
+        $users = DB::select('select * from prod_departamento limit 1');
+        return response()->json($users);
     }
 
     /**
