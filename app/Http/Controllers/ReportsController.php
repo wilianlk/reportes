@@ -13,7 +13,7 @@ class ReportsController extends Controller
      */
     public function index()
     {
-        //
+        // se validara git
     }
 
     /**
