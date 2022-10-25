@@ -16,7 +16,7 @@ class ReportsController extends Controller
     {
         // se validara git
         $mistery = [];
-        $users = DB::select('select * from prod_departamento limit 1');
+        $users = DB::select('select * from prod_departamento limit 2');
         return response()->json($users);
     }
 
