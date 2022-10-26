@@ -69,6 +69,10 @@ class ReportsController extends Controller
         GROUP BY c.id_cliente");
         return response()->json($users);
     }
+ public function testfelipe()
+    {
+        
+ }
 
     /**
      * Show the form for creating a new resource.
