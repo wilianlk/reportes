@@ -69,6 +69,10 @@ AND c.id_status <> 0
 GROUP BY c.id_cliente");
         return response()->json($users);
     }
+ public function testfelipe()
+    {
+        
+ }
 
     /**
      * Show the form for creating a new resource.
